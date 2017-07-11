@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+
+    <title>Main title</title>
+</head>
+
+<body>
+    <a href="/setting.html">Настройки</a>
+    <!-- Начало календаря -->
+    <div id="box_calendar">
+        <table id="calendar2">
+            <thead>
+                <tr><td>‹<td colspan="5"><td>›
+                <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+            <tbody>
+        </table>
+    </div>
+    <!-- Конец календаря -->
+    <!-- Начало ежедневника -->
+    <div id="box_notes">
+        <form>
+        <p>Заметки:</p>
+        <p><textarea rows="10" cols="45" name="text" placeholder="Новая заметка..." id="note"></textarea></p>
+        <p><input type="button" value="Записать" id="note_btn"></p>
+        <p>Ваши заметки:</p>
+        <p><textarea readonly rows="10" cols="45" name="text" placeholder="Здесь будут Ваши заметки" id="myNote"></textarea></p>
+      </form>
+    </div>
+    <!-- Конец ежедневника -->
+    <!-- начало виджета со статистикой -->
+    <div id="stat">
+        <p>Информация о профиле:</p>
+        <p><textarea id="info" readonly rows="10" cols="45" name="text"></textarea></p>
+    </div>
+    <!-- конец виджета со статистикой -->
+    <!-- галерея картинок начало -->
+    <div id="gallery">
+        <p>Галерея картинок</p>
+        <div id="img"></div>     <!-- сюда вставим картинки -->
+        <div>
+            <p>Загрузка:</p>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" size="50" />
+            <input type="submit" value="Загрузить" id="#btn"/>
+            </form>
+        </div>
+    </div>
+    <!-- галерея картинок конец -->
+<footer>
+    <p>Copyright Ангелина Воронина 2017</p>
+</footer>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

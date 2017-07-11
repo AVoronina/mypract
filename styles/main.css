@@ -1,0 +1,106 @@
+body {
+    font-family: 'Yantramanav', sans-serif;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #F0F8FF;
+}
+
+
+
+/*Стили для календаря*/
+#box_calendar {
+    width: 155px;
+    height: 180px;
+    background-color: #87CEEB;
+    padding: 10px;
+    box-shadow: 0 0 5px;
+}
+
+#calendar2 {
+    width: 80px;
+    font: monospace;
+    line-height: 1.2em;
+    font-size: 17px;
+    text-align: center;
+}
+
+#calendar2 thead tr:last-child {
+    font-size: small;
+    color: rgb(85, 85, 85);
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+    color: rgb(50, 50, 50);
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+}
+
+#calendar2 tbody td {
+    color: rgb(44, 86, 122);
+}
+
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+    color: rgb(231, 140, 92);
+}
+
+#calendar2 tbody td.today {
+    background: rgb(0,0,139);
+    color: #fff;
+}
+
+/*Ежедневник*/
+#box_notes {
+    width: 380px;
+    height: 400px;
+    background-color: #7B68EE;
+    box-shadow: 0 0 5px;
+}
+
+form {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    width: 20px;
+    height: 60px;
+    background-color: #D3D3D3;
+    box-shadow: 0 0 5px;
+}
+
+a:hover {
+    background:  radial-gradient(#ADADAD, #A9A9A9);
+}
+
+textarea {
+    width: 350px;
+    height: 100px;
+}
+
+#stat {
+    width: 500px;
+    height: 180px;
+    background-color: #87CEFA;
+    box-shadow: 0 0 5px;
+}
+
+#info_btn {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+#gallery {
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    padding-bottom: 5px;
+}
+
+img {
+    transition: 2.5s width;
+    transition: 2.5s height;
+}
